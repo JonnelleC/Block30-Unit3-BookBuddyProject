@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import  { useState, useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 const BookList = ({ setSingleBookDetails }) => {
   const [bookList, setBookList] = useState([]);
@@ -47,8 +48,8 @@ const BookList = ({ setSingleBookDetails }) => {
       <ul>
         {bookList.map((singleBook) => (
           <li
-            key={singleBook.id}  // Using a unique key
-            onClick={() => getBookInfo(singleBook.id)}  // Pass the book id instead
+            key={singleBook.id}  
+            onClick={() => getBookInfo(singleBook.id)}  
           >
             {singleBook.title}
           </li>
@@ -56,6 +57,10 @@ const BookList = ({ setSingleBookDetails }) => {
       </ul>
     </div>
   );
+};
+
+BookList.propTypes = {
+  setSingleBookDetails: PropTypes.func.isRequired,
 };
 
 export default BookList;
