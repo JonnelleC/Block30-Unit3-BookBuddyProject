@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { Routes, Route } from "react-router-dom";
-import "./App.css";
+
+import { Routes, Route } from 'react-dom';
 import NavBar from "./Home.jsx";
 import Authorization from "./Authorization.jsx";
 
@@ -15,6 +14,8 @@ const App = () => {
       </Routes>
     </>
   );
+
+
 };
 
 export default App;
