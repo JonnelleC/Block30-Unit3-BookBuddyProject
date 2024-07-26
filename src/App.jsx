@@ -1,21 +1,19 @@
-
-import { Routes, Route } from 'react-dom';
-import NavBar from "./Home.jsx";
-import Authorization from "./Authorization.jsx";
+import { Routes, Route } from 'react-router-dom';
+import Home from './Home'; 
+import Authorization from './Authorization';
+import BookList from './BookList'; 
 
 const App = () => {
   return (
     <>
-      <NavBar />
+      <Home/>
       <Routes>
         <Route path="/books" element={<BookList />} />
         <Route path="/login" element={<Authorization />} />
-        <Route path="/home" element={<h1>Ellenor's Book Club</h1>} />
+        <Route path="/home" element={<Home/>} />
       </Routes>
     </>
   );
-
-
 };
 
 export default App;

@@ -1,15 +1,18 @@
 import {Link} from 'react-router-dom';
+import React from 'react';
 
-
-Const NavBar = () => {
+const Home = () => {
     return (
-        <>
-        <Link  to ='/home'>Home</Link>
-        <Link  to ='/books'>Book Collection</Link>
-        <Link  to ='/login'>Log in / Register</Link>
-        
-        </>
-    )
-}
+        <nav>
+        <ul>
+          <li><Link to="/home">Home</Link></li>
+          <li><Link to="/books">Books</Link></li>
+          <li><Link to="/login">Login</Link></li>
+        </ul>
+      </nav>
+       
 
-export default NavBar 
+    )
+};
+
+export default Home
