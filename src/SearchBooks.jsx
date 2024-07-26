@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const SearchBook = () => {
   const [titleInput, setTitleInput] = useState('');

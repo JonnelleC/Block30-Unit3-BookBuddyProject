@@ -13,6 +13,7 @@ const App = () => {
         <Route path="/login" element={<Authorization />} />
         <Route path="/home" element={<Home/>} />
         <Route path="/search" element={<SearchBook />} />
+        
       </Routes>
     </>
   );
