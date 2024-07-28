@@ -13,6 +13,12 @@ Authenticated Users should be able to:
 - Return books they have currently checked out
 - View their own account page and currently checked out books
 
+// Solution 
+
+// 1.	Store Authentication State: Save the user’s authentication state, such as an access token, when they log in or register.
+// 2.	Protect Routes: Use protected routes to restrict access to certain parts of the application to authenticated users only.
+// 3.	Handle Authentication in BookList Component: Check if the user is authenticated before allowing them to checkout books.
+
 3 	This criterion is linked to a Learning Outcome AJAX
 AJAX Basics are Implemented
 - usage of HTTP Methods (GET/POST/PATCH/DELETE)
